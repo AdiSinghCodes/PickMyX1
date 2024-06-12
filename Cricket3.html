@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PickMyX1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-side">
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQoQ5zbhmO0YPOnH6E9eDysW6eSlFiSUGMGwb09ZmolenLCeCh0PlB7hlDylJAcdNQOKREbhTAafsvKG0o" alt="Cricket Personality" class="cricket-photo">
+        </div>
+        <div class="question-side">
+            <h1>Let's test your Cricket knowledge🏏</h1>
+            <br>
+            <form id="questionForm" action="/submit-question" method="post">
+                <label for="question">Question :</label>
+                <p>Who holds the record for the highest individual score in Test cricket and in which year was the first Cricket World Cup held?</p>
+                <label for="question">Your Answer : (Please mention the name and number only separated by commas)</label><br>
+                <textarea id="answer" name="answer" rows="5" required></textarea><br>
+                <input type="submit" value="Submit" id="submission" class="submit-button">
+                <p id="feedback"></p>
+            </form>
+            
+        </div>
+    </div>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://t4.ftcdn.net/jpg/06/47/68/01/360_F_647680170_4U5WcCBpEnjhKF61notrDk41O9Yb1XEk.jpg");
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    background-size: contain;
+}
+
+.cricket-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.question-side {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-side h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .submit-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</body>
+<script src="Cricket.js"></script>
+</html>
