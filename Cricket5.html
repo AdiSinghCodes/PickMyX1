@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team India Squad Selection</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="squad">
+            <h1>Team India Squad for T20 World Cup 2024</h1>
+            <div class="players">
+                <div class="player">
+                    <img src="https://bcciplayerimages.s3.amazonaws.com/resizedimageskirti/107_compress.png" alt="Rohit Sharma">
+                    <button data-name="Rohit Sharma">Rohit Sharma (Captain)</button>
+                </div>
+                <div class="player">
+                    <img src="https://hindi.mykhel.com/thumb/247x100x233/cricket/players/8/3788.jpg" alt="Virat Kohli">
+                    <button data-name="Virat Kohli">Virat Kohli</button>
+                </div>
+                <div class="player">
+                    <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/323000/323036.png" alt="Rishab Pant">
+                    <button data-name="Rishab Pant">Rishab Pant</button>
+                </div>
+                <div class="player">
+                    <img src="https://d1k8sn41pix00a.cloudfront.net/media/players/photos/shivam-dube.png" alt="Shivam Dube">
+                    <button data-name="Shivam Dube">Shivam Dube</button>
+                </div>
+                <div class="player">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReTvYN0hhGw326DpFMWXKMQ6LgEU_JFxdIbA&s" alt="Hardik Pandya">
+                    <button data-name="Hardik Pandya">Hardik Pandya (Vice-Captain)</button>
+                </div>
+                <div class="player">
+                    <img src="https://i0.wp.com/crictoday.com/wp-content/uploads/2023/02/suryakumar-yadav-t20wc22.webp?ssl=1" alt="Suryakumar Yadav">
+                    <button data-name="Suryakumar Yadav">Suryakumar Yadav</button>
+                </div>
+                <div class="player">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/resizedimageskirti/9_compress.png" alt="Ravindra Jadeja">
+                    <button data-name="Ravindra Jadeja">Ravindra Jadeja</button>
+                </div>
+                <div class="player">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/resizedimageskirti/1113_compress.png" alt="Axar Patel">
+                    <button data-name="Axar Patel">Axar Patel</button>
+                </div>
+                <div class="player">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/resizedimageskirti/261_compress.png" alt="Kuldeep Yadav">
+                    <button data-name="Kuldeep Yadav">Kuldeep Yadav</button>
+                </div>
+                <div class="player">
+                    <img src="https://admin.thecricketer.com/weblab/Sites/96c8b790-b593-bfda-0ba4-ecd3a9fdefc2/resources/images/site/chahalheadshot-min.jpg" alt="Yuzvendra Chahal">
+                    <button data-name="Yuzvendra Chahal">Yuzvendra Chahal</button>
+                </div>
+                <div class="player">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/resizedimageskirti/1124_compress.png" alt="Jasprit Bumrah">
+                    <button data-name="Jasprit Bumrah">Jasprit Bumrah</button>
+                </div>
+                <div class="player">
+                    <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/322600/322611.png" alt="Mohammed Siraj">
+                    <button data-name="Mohammed Siraj">Mohammed Siraj</button>
+                </div>
+                <div class="player">
+                    <img src="https://static-files.cricket-australia.pulselive.com/headshots/440/2667-camedia.png" alt="Arshdeep Singh">
+                    <button data-name="Arshdeep Singh">Arshdeep Singh</button>
+                </div>
+                <div class="player">
+                    <img src="https://images-cricketcom.imgix.net/sanju-samson-1717182678632?fit=crop&crop=face&auto=format&ixlib=react-9.8.0&h=250&w=180" alt="Sanju Samson">
+                    <button data-name="Sanju Samson">Sanju Samson</button>
+                </div>
+                <div class="player">
+                    <img src="https://www.hindustantimes.com/static-content/1y/cricket-logos/players/yashasvi-jaiswal.png" alt="Yashasvi Jaiswal">
+                    <button data-name="Yashasvi Jaiswal">Yashasvi Jaiswal</button>
+                </div>
+            </div>
+        </div>
+        <div class="selection">
+            <h2>Your Picked XI</h2>
+            <ul id="pickedPlayers">
+                <!-- Selected players will be listed here -->
+            </ul>
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://t4.ftcdn.net/jpg/06/47/68/01/360_F_647680170_4U5WcCBpEnjhKF61notrDk41O9Yb1XEk.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.squad {
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.selection {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.player img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#pickedPlayers {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pickedPlayers li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+    </style>
+    
+</body>
+<script> 
+    document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".player button");
+    const pickedPlayersList = document.getElementById("pickedPlayers");
+    const maxPlayers = 11;
+    const pickedPlayers = [];
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const playerName = button.getAttribute("data-name");
+            switch (true) {
+                case pickedPlayers.includes(playerName):
+                    alert("This player is already in your XI!");
+                    break;
+                
+                case pickedPlayers.length < maxPlayers:
+                    pickedPlayers.push(playerName);
+                    updatePlayerList();
+                    break;
+
+                default:
+                    alert("You can only pick 11 players!");
+            }
+        });
+    });
+
+    function updatePlayerList() {
+        pickedPlayersList.innerHTML = "";
+        pickedPlayers.forEach(name => {
+            const li = document.createElement("li");
+            li.textContent = name;
+            pickedPlayersList.appendChild(li);
+    });
+    }
+
+    const submit = document.getElementById("submitButton");
+    submit.addEventListener("click", () => {
+        if(pickedPlayers.length === maxPlayers)
+    {
+        localStorage.setItem("pickedPlayers", JSON.stringify(pickedPlayers));
+        window.location.href = "Cricket6.html";
+    }
+    else{
+        alert("Please enter 11 players");
+    }
+    });
+   
+});
+</script>
+
+</html>
