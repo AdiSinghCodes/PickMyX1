@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Result</title>
+    <style>
+        body {
+            background-image: url("https://www.shutterstock.com/image-photo/sky-clouds-view-aeroplane-above-260nw-1190466550.jpg");
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .result-container {
+            flex: 1;
+            text-align: center;
+        }
+        .result-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Result</h1>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://www.thestatesman.com/wp-content/uploads/2022/06/rohit-1.jpg" alt="Cricketer Image">
+        </div>
+        <div class="result-container">
+            <p>Your predicted playing 11 has been selected for the match!🤩</p>
+            <p>Your team's similarity with other users' teams is <span id="similarityPercentage"></span>%.</p>
+          
+            <p>Good luck with your selected players!👍🏻</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const keyPlayers = ["Virat Kohli", "Rohit Sharma", "Sanju Samson", "Yashasvi Jaiswal"];
+            const pickedPlayers = JSON.parse(localStorage.getItem("pickedPlayers")) || [];
+            let similarityPercentage = 0;
+            const includedPlayers = keyPlayers.filter(player => pickedPlayers.includes(player)).length;
+
+            similarityPercentage = 75 + (includedPlayers*3.7);
+            document.getElementById("similarityPercentage").textContent = similarityPercentage.toFixed(2);
+        });
+    </script>
+        
+</body>
+</html>
+
+
