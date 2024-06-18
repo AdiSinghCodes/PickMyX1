@@ -54,7 +54,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function(){
-            const keyPlayers = ["Virat Kohli", "Rohit Sharma", "Sanju Samson", "Yashasvi Jaiswal"];
+            const keyPlayers = ["Virat Kohli", "Kuldeep Yadav", "Sanju Samson", "Yashasvi Jaiswal"];
             const pickedPlayers = JSON.parse(localStorage.getItem("pickedPlayers")) || [];
             let similarityPercentage = 0;
             const includedPlayers = keyPlayers.filter(player => pickedPlayers.includes(player)).length;
