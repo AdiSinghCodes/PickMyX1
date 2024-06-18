@@ -59,7 +59,7 @@
             let similarityPercentage = 0;
             const includedPlayers = keyPlayers.filter(player => pickedPlayers.includes(player)).length;
 
-            similarityPercentage = 75 + (includedPlayers*3.7);
+            similarityPercentage = 75 + (includedPlayers*4.7);
             document.getElementById("similarityPercentage").textContent = similarityPercentage.toFixed(2);
         });
     </script>
