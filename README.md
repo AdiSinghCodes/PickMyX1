@@ -6,7 +6,7 @@
 
 *Create, customize, and compare your dream cricket XI with the community*
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)]([your-demo-link](https://adisinghcodes.github.io/PickMyX1/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://adisinghcodes.github.io/PickMyX1/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/AdiSinghCodes/PickMyX1)
 
 </div>
